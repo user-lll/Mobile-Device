@@ -1,0 +1,252 @@
+header{
+    position: fixed;
+    top:0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 0.37rem;
+    padding: 0 0.06rem;
+    background: rgb(255, 133, 42);
+}
+header div{
+    width: 0.4rem;
+    height: 0.24rem;
+    background: url("../images/logo.png") no-repeat center;
+    background-size: 70%; 
+    }
+header a{
+  position: relative;
+  flex-grow: 1;
+  line-height: 0.25rem;
+  text-align: center;
+  color: white;
+  background: #FF4E22;
+  font-size: 0.13rem;
+}
+header a i{
+    position: absolute;
+    font-size: 0.25rem;
+    left: 50%;
+    transform: translateX(-0.65rem);
+}
+.slideBox{ position:relative; overflow:hidden; margin-top: 0.3701rem}
+ .slideBox .hd{ position:absolute; height:0.28rem; line-height:0.28rem; bottom:5%; left:30%; z-index:1; }
+  .slideBox .hd li{ display:inline-block; width:0.08rem; height:0.08rem; -webkit-border-radius:50%; -moz-border-radius:50%; border-radius:50%; background:rgba(255,255,255,.5); text-indent:-9999px; overflow:hidden; margin:0 0.06rem;   }
+ .slideBox .hd li.on{ background:#FF4E22;}
+ .slideBox .bd{ position:relative; z-index:0; }
+ .slideBox .bd li{ position:relative; text-align:center;  }
+  .slideBox .bd li img{ background:url(images/loading.gif) center center no-repeat;  vertical-align:top; width:100%;/* 图片宽度100%，达到自适应效果 */}
+  .slideBox .bd li a{ -webkit-tap-highlight-color:rgba(0,0,0,0);  }  /* 去掉链接触摸高亮 */
+  .slideBox .bd li .tit{ display:block; width:100%;  position:absolute; bottom:0; text-indent:10px; height:28px; line-height:28px; background:url(images/focusBg.png) repeat-x; color:#fff;  text-align:left; }
+  .line{
+    position: relative;
+    top:-0.09rem;
+    height: 0.1rem;
+    background: url("../images/TB1vMMwChTpK1RjSZFMXXbG_VXa-1125-30.png");
+    background-size: 100%;
+  } 
+  nav,nav ul{
+    height: 1.56rem;
+}
+  nav{
+    position: relative;
+    font-size: 0.11rem;
+    margin-top: -0.1rem;
+  }
+  nav ul{ 
+    position: absolute;
+    left:0;
+    width:6.55rem;
+  }
+nav ul li{
+  display: flex;
+  justify-content: space-around;
+}
+  nav ul li img{
+     width:  0.61rem;
+     height: 0.48rem;
+  }
+  nav ul li a{
+      text-align: center;
+      color:rgb(102, 102, 102);
+      margin-left: 0.115rem;
+  } 
+.tips-box{
+    height: 0.2rem;
+}
+.tips{ 
+    position: relative;
+    background: rgb(212, 216, 222);
+}
+.tips,.tips span{
+    width: 0.5rem;
+    height: 0.03rem;
+    border-radius: 4px;
+}
+.tips span{
+    position: absolute;
+    left:0;
+    width:0.2rem;
+    background: #FF4E22;
+}
+section{
+    display: flex;
+    margin: 0.1rem 0.08rem 0;
+}
+section aside:nth-child(2){
+    margin-right: 0.005rem;
+}
+section aside:first-child{
+    border-radius: 0.12rem 0 0 0;
+}
+section aside:last-child{
+    border-radius:0 0.12rem 0 0;
+}
+section aside{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+.sing{
+    position: relative;
+    width: 0.89rem;
+    height: 1.21rem;
+    padding:0.05rem 0 0 0.05rem;
+}
+section aside .sing a{
+    position: absolute;
+    bottom: 0;
+    left:50%;
+    transform: translateX(-50%);
+    width: 0.8rem;
+    height: 0.98rem;
+    padding: 0.05rem 0 0 0.05rem;
+    background: url("../images/O1CN01TvCIYE1UJfd4lVrlf_!!0-juitemmedia.jpg") center 80% no-repeat;
+    background-size:85%; 
+    font-size:0.13rem;
+    font-weight: 600;
+}
+section aside .sing:nth-child(2) a{
+    background: url("../images/O1CN014TLbF51zErYm7W1Qu_!!0-juitemmedia.jpg") center 80% no-repeat;
+    background-size:85%; 
+}
+section aside .sing:nth-child(3) a{
+    background: url("../images/O1CN01GGb3p82214TVWktCv_!!6000000007059-0-yinhe.jpg") center 80% no-repeat;
+    background-size:85%; 
+}
+ .top{
+    position: fixed;
+    right:3%;
+    bottom: 10%;
+    color: rgb(187, 187, 187);
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(204, 204, 204);
+    line-height: 0.6rem;
+    border-radius: 50%;
+    width:0.44rem;
+    height:0.44rem;
+    font-size: 0.13rem;
+    text-align: center;
+    opacity: 0;
+}
+    .top .iconfont{
+    color: rgb(153, 153, 153);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 0.24rem;
+}
+    .content-title{
+        padding: 0.12rem 0;
+    }
+    .content-title img{
+        width: 1.61rem;
+        height: 0.19rem;
+    }
+  .content-box{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+  .content{
+      width:  1.71rem;
+      height: 2.6rem;
+      padding: 0 0.09rem;
+      margin-top:0.09rem; 
+    }
+  .content{
+      font-size: 0.14rem;
+  }
+  .content p{
+    width: 1.52rem;
+    height: 0.37rem;
+    overflow: hidden;
+    margin:0.11rem 0;
+  }
+  .content a{
+      font-size: 0.12rem
+  }
+  .content a span.red{
+      font-size: 0.14rem;
+  }
+  .information{
+    margin-top:0.2rem;
+    padding: 0.2rem 0.09rem 0.56rem;
+   background-color: rgb(78, 82, 94);
+  }
+  .information div{
+    display: flex;
+    justify-content: space-evenly;
+}
+  .information div a{
+    padding: 0 0.17rem;
+    line-height: 0.35rem;
+    color: rgb(195, 198, 202);
+    font-size: 0.14rem;
+  }
+  .information div a+a{ 
+    border-radius: 0.06rem;
+    border: 1px solid rgb(66, 69, 77);
+    background-color: rgb(85, 89, 101);
+  }
+  .information p{
+    margin-top: 0.2rem; 
+    color: rgb(195, 198, 202);
+    padding-left: 0.4rem;
+    font-size: 0.12rem;
+    background:url("../images/bq.png") no-repeat 0.9rem center;
+    background-size: auto 0.18rem;
+  }
+  .Scrolling-box{
+      position: relative;
+      height: 0.4rem;
+      border-radius:0 0 0.12rem 0.12rem;
+      background: url("../images/w.png") no-repeat 5% center;
+      background-color: white;
+      margin:0.005rem 0.09rem 0;
+      background-size:18%;
+      overflow: hidden;
+  }
+  .Scrolling{
+      position: absolute;
+      left:0.9rem;
+      top:0;
+    }
+  .Scrolling li{
+      display: flex;
+      align-items: center;
+      font-size: 0.13rem;
+      height: 0.4rem;
+    }
+    .Scrolling li a:first-child{
+      padding: 0 0.06rem;
+      background: #feefec;
+      border-radius:0.04rem; 
+    }
+    .Scrolling li a:last-child{
+        width: 1.74rem;
+        margin-left: 0.05rem;
+    }
+  
